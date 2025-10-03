@@ -17,7 +17,7 @@ function App() {
       <SplitText
   text="Hello, GSAP!"
   className="text-2xl font-semibold text-center"
-  delay={100}
+  delay={1000}
   duration={0.6}
   ease="power3.out"
   splitType="chars"
