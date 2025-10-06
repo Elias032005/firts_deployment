@@ -3,6 +3,7 @@ import { ChartAreaInteractive } from "@/components/chart-area-interactive"
 import { DataTable } from "@/components/data-table"
 import { SectionCards } from "@/components/section-cards"
 import { SiteHeader } from "@/components/site-header"
+import { ThemeProvider } from "@/theme-provider"
 import {
   SidebarInset,
   SidebarProvider,
@@ -13,7 +14,7 @@ function App() {
   
 
   return (
-    
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <SidebarProvider
       style={
         {
@@ -37,7 +38,12 @@ function App() {
           </div>
         </div>
       </SidebarInset>
-    </SidebarProvider>
+      
+      
+    
+      </SidebarProvider>
+    </ThemeProvider>
+    
     
   )
 }
