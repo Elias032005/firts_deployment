@@ -40,7 +40,7 @@ function App() {
         </div>
       </SidebarInset>
       
-      <Button variant="outline">Button</Button>
+      <Button variant="outline">Boton</Button>
     
       </SidebarProvider>
     </ThemeProvider>
